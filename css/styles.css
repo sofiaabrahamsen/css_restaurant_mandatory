@@ -1,0 +1,116 @@
+@import 'variables.css';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--mainFont);
+}
+
+header{
+    color: var(--headerColor);
+    background: var(--bgHeaderColor);
+    font-family: var(--listFont);
+    line-height: 4rem;
+    text-indent: 2rem;
+}
+
+nav{
+    color: var(--headerColor);
+    background-color: var(--bgNavColor);
+    padding: 0 1rem;
+    line-height: 2rem;
+}
+
+ul{
+    padding: 0.5rem;
+}
+li{
+    list-style-type: none;
+    color: var(--listColor);
+    font-family: var(--listFont);
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--bgNavColor);
+    font-weight: bold;
+}
+nav a{
+    color: var(--headerColor);
+}
+
+nav li{
+    display: block;
+    text-align: center;
+    color: var(--headerColor);
+    font-family: var(--navFont);
+    border-bottom: thin solid;
+}
+nav li:nth-of-type(3){
+    border-bottom: none;
+}
+@media only screen and (min-width: 480px){
+    nav li{
+        display: inline;
+        padding-right: 1rem;
+        border-bottom: none;
+    }
+}
+
+nav a.selected{
+    color: var(--selectedColor);
+}
+
+body > main{
+    padding: 0.5rem 1rem 1rem;
+    position: relative;
+    top: 0;
+}
+@media only screen and (min-width: 480px) {
+    body > main {
+        padding-bottom: 3rem;
+    }
+}
+
+img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+body > footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    color: var(--headerColor);
+    background-color: var(--bgNavColor);
+    text-align: center;
+    font-size: 0.7rem;
+}
+@media only screen and (min-width: 480px){
+    body > footer{
+        position: fixed;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 900px) {
+    main {
+        width: 88vw;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    main {
+        width: 80vw;
+    }
+}

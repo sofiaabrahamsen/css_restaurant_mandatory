@@ -1,0 +1,18 @@
+:root {
+    --mainColor: black;
+    --headerColor: white;
+
+    --listColor: rgb(177, 62, 54);
+    --selectedColor: rgb(235, 206, 154);
+    --priceColor: floralwhite;
+
+    --bgHeaderColor: rgb(234, 80, 71);
+    --bgNavColor: rgb(39, 53, 74);
+    --bgQuoteColor: lightgrey;
+    --bgArticleColor: lightgoldenrodyellow;
+
+    --mainFont: Arial, Helvetica, sans-serif;
+    --navFont: Verdana, Geneva, Tahoma, sans-serif;
+    --listFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

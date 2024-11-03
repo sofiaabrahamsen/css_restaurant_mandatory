@@ -1,0 +1,54 @@
+@import 'styles.css';
+
+article.dish{
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: var(--bgArticleColor);
+    vertical-align: top;
+}
+
+p.menuDescription{
+    margin-top: 0.5rem;
+}
+
+article > header{
+    border-radius: 0.5rem;
+    text-align: left;
+    text-indent: 0;
+    background-color: var(--bgArticleColor);
+    color: var(--mainColor);
+    font-weight: bold;
+}
+
+p.price{
+    position: relative;
+    right: 0;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: thick solid var(--bgNavColor);
+    border-radius: 0.5rem;
+    color: var(--priceColor);
+    background-color: var(--listColor);
+}
+
+img.menu{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    img.menu {
+        float: right;
+        margin: 0 0 0 0.5rem;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    article.dish {
+        display: inline-block;
+        width: 45%;
+    }
+}
